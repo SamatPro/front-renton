@@ -9,6 +9,7 @@ class RegisterComponent extends Component {
         this.state = {
             login: '',
             password: '',
+            repassword: '',
             firstName: '',
             lastName: '',
             address: '',
@@ -49,19 +50,61 @@ class RegisterComponent extends Component {
     render() {
         return (
             <div>
-                <h1>Register</h1>
-                <div className="container">
+                <nav id="navigation">
+                    <div class="container">
+                        <div id="responsive-nav">
+                            <ul class="main-nav nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Популярные</a></li>
+                                <li><a href="#">Категории</a></li>
+                                <li><a href="#">бтыавбыт</a></li>
+                                <li><a href="#">ыаываыа</a></li>
+                                <li><a href="#">отыоплs</a></li>
+                                <li><a href="#">Aлвылатоы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
 
-                    Login: <input type="text" name="login" value={this.state.login} onChange={this.handleChange} />
-                    Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange} />
-                    First Name: <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange}/>
-                    Last Name: <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange}/>
-                    Address: <input type="text" name="address" value={this.state.address} onChange={this.handleChange}/>
-                    Phone: <input type="text" name="phone" value={this.state.phone} onChange={this.handleChange}/>
+                <div class="section">
+                    <div class="container">
+                        <div class="row">
 
-                    <button className="btn btn-success">Register</button>
+                            <div class="col-md-7">
+                                <div class="billing-details">
+                                    <div class="section-title">
+                                        <h3 class="title">Регистрация</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input" type="email" name="login" placeholder="Login" value={this.state.login} onChange={this.handleChange}/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input className="input" type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input className="input" type="password" name="repassword" placeholder="Repassword" value={this.state.repassword} onChange={this.handleChange}/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input" type="text" name="first-name" placeholder="First Name" value={this.state.firstName} onChange={this.handleChange}/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input" type="text" name="last-name" placeholder="Last Name" value={this.state.lastName} onChange={this.handleChange}/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input" type="text" name="address" placeholder="Address" value={this.state.address} onChange={this.handleChange}/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="input" type="tel" name="tel" placeholder="Phone" value={this.state.phone} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <button href="#" className="primary-btn order-submit">Place order</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         )
     }
 }
