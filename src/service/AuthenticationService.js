@@ -17,12 +17,15 @@ class AuthenticationService {
         })
     }
 
-    executeJwtRegister(login, email, password) {
+    executeJwtRegister(login, password, firstName, lastName, address, phone) {
         console.log(login);
         return axios.post(`${API_URL}/register`, {
             login,
-            email,
-            password
+            password,
+            firstName,
+            lastName,
+            address,
+            phone
         })
     }
 

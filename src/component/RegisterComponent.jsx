@@ -8,8 +8,11 @@ class RegisterComponent extends Component {
 
         this.state = {
             login: '',
-            email: '',
-            password: ''
+            password: '',
+            firstName: '',
+            lastName: '',
+            address: '',
+            phone: ''
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -27,7 +30,13 @@ class RegisterComponent extends Component {
 
     registerClicked() {
         AuthenticationService
-            .executeJwtRegister(this.state.login, this.state.email, this.state.password)
+            .executeJwtRegister(
+                this.state.login,
+                this.state.password,
+                this.state.firstName,
+                this.state.lastName,
+                this.state.address,
+                this.state.phone)
             .then((response) => {
                 console.log(response.data);
                 AuthenticationService.registerSuccessfulLoginForJwt(this.state.login, response.data.value)
@@ -43,10 +52,14 @@ class RegisterComponent extends Component {
                 <h1>Register</h1>
                 <div className="container">
 
-                    User Name: <input type="text" name="login" value={this.state.login} onChange={this.handleChange} />
-                    Email: <input type="text" name="email" value={this.state.email} onChange={this.handleChange} />
+                    Login: <input type="text" name="login" value={this.state.login} onChange={this.handleChange} />
                     Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange} />
-                    <button className="btn btn-success" onClick={this.registerClicked}>Login</button>
+                    First Name: <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange}/>
+                    Last Name: <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange}/>
+                    Address: <input type="text" name="address" value={this.state.address} onChange={this.handleChange}/>
+                    Phone: <input type="text" name="phone" value={this.state.phone} onChange={this.handleChange}/>
+
+                    <button className="btn btn-success">Register</button>
                 </div>
             </div>
         )
