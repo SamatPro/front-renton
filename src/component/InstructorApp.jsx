@@ -13,7 +13,7 @@ class InstructorApp extends Component {
                 <Router>
                     <>
                         <Switch>
-                            <Route path="/" exact component={LoginComponent} />
+                            <Route path="/" exact component={MainPageComponent} />
                             <Route path="/login" exact component={LoginComponent} />
                             <Route path="/register" exact component={RegisterComponent} />
                             <Route path="/index" exact component={MainPageComponent}/>

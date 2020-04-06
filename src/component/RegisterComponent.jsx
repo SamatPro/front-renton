@@ -97,7 +97,7 @@ class RegisterComponent extends Component {
                                         <input class="input" type="tel" name="tel" placeholder="Phone" value={this.state.phone} onChange={this.handleChange}/>
                                     </div>
                                 </div>
-                                <button href="#" className="primary-btn order-submit">Place order</button>
+                                <button href="#" className="primary-btn order-submit" onClick={this.registerClicked}>Зарегистрироваться</button>
                             </div>
                         </div>
                     </div>

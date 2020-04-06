@@ -31,7 +31,7 @@ class LoginComponent extends Component {
             .then((response) => {
                 console.log(response.data);
                 AuthenticationService.registerSuccessfulLoginForJwt(this.state.login, response.data.tokenValue)
-                this.props.history.push(`/chat`)
+                this.props.history.push(`/profile`)
             }).catch(() => {
             this.setState({showSuccessMessage: false})
             this.setState({hasLoginFailed: true})
@@ -42,16 +42,46 @@ class LoginComponent extends Component {
     render() {
         return (
             <div>
-                <h1>Login</h1>
-                <div className="container">
-                    {/*<ShowInvalidCredentials hasLoginFailed={this.state.hasLoginFailed}/>*/}
-                    {this.state.hasLoginFailed && <div className="alert alert-warning">Invalid Credentials</div>}
-                    {this.state.showSuccessMessage && <div>Login Successful</div>}
-                    {/*<ShowLoginSuccessMessage showSuccessMessage={this.state.showSuccessMessage}/>*/}
-                    User Name: <input type="text" name="login" value={this.state.login} onChange={this.handleChange}/>
-                    Password: <input type="password" name="password" value={this.state.password}
-                                     onChange={this.handleChange}/>
-                    <button className="btn btn-success" onClick={this.loginClicked}>Login</button>
+                <nav id="navigation">
+                    <div className="container">
+                        <div id="responsive-nav">
+                            <ul className="main-nav nav navbar-nav">
+                                <li className="active"><a href="#">Home</a></li>
+                                <li><a href="#">Популярные</a></li>
+                                <li><a href="#">Категории</a></li>
+                                <li><a href="#">бтыавбыт</a></li>
+                                <li><a href="#">ыаываыа</a></li>
+                                <li><a href="#">отыоплs</a></li>
+                                <li><a href="#">Aлвылатоы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div className="section">
+                    <div className="container">
+                        <div className="row">
+
+                            <div className="col-md-7">
+                                <div className="billing-details">
+                                    <div className="section-title">
+                                        <h3 className="title">Вход</h3>
+                                    </div>
+                                    <div className="form-group">
+                                        <input className="input" type="email" name="login" placeholder="Login"
+                                               value={this.state.login} onChange={this.handleChange}/>
+                                    </div>
+                                    <div className="form-group">
+                                        <input className="input" type="password" name="password" placeholder="Password"
+                                               value={this.state.password} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <button href="#" className="primary-btn order-submit"
+                                        onClick={this.loginClicked}>Войти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
