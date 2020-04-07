@@ -35,7 +35,7 @@ class MainPageComponent extends Component {
                                                 </div>
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
+                                            <p class="product-category">Спорт</p>
                                             <h3 class="product-name"><a href="#">Велосипед</a></h3>
                                             <h4 class="product-price">$980.00 <del
                                                 class="product-old-price">$990.00</del></h4>
@@ -66,14 +66,14 @@ class MainPageComponent extends Component {
                                 <div class="col-md-4 col-xs-6">
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="./img/product.jpg" alt=""/>
+                                            <img src="./img/baba-yaga.jpg" alt=""/>
                                                 <div class="product-label">
                                                     <span class="new">NEW</span>
                                                 </div>
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">Велосипед</a></h3>
+                                            <p class="product-category">Тряпки</p>
+                                            <h3 class="product-name"><a href="#">Кастюм Бабы-Яги</a></h3>
                                             <h4 class="product-price">$980.00 <del
                                                 class="product-old-price">$990.00</del></h4>
                                             <div class="product-rating">
