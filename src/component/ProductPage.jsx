@@ -1,26 +1,13 @@
 import React, {Component} from 'react'
+import Navbar from "./Navbar";
 
-class ProductComponent extends Component {
+class ProductPage extends Component {
 
     render() {
         return (
             <div>
-                <nav id="navigation">
-                    <div class="container">
-                        <div id="responsive-nav">
-                            <ul class="main-nav nav navbar-nav">
-                                <li className="active"><a href="#">Главная</a></li>
-                                <li><a href="#">Топ</a></li>
-                                <li><a href="#">Категории</a></li>
-                                <li><a href="#">РОПрывало</a></li>
-                                <li><a href="#">оываол</a></li>
-                                <li><a href="#">лываоы</a></li>
-                                <li><a href="#">Aывоап</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                
+                <Navbar/>
+
                 <div class="section">
                     <div class="container">
                         <div class="row">
@@ -29,7 +16,7 @@ class ProductComponent extends Component {
 
                                     <div class="product-preview">
                                         <img src="./img/baba-yaga.jpg" alt=""/>
-								    </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -38,11 +25,11 @@ class ProductComponent extends Component {
                                 <div id="product-imgs">
                                     <div className="product-preview">
                                         <img src="./img/product.jpg" alt=""/>
-								    </div>
+                                    </div>
 
                                     <div className="product-preview">
                                         <img src="./img/baba-yaga.jpg" alt=""/>
-								    </div>
+                                    </div>
 
                                     <div className="product-preview">
                                         <img src="./img/product.jpg" alt=""/>
@@ -61,7 +48,7 @@ class ProductComponent extends Component {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-5">
                                 <div class="product-details">
                                     <h2 class="product-name">Баба яга</h2>
@@ -76,10 +63,14 @@ class ProductComponent extends Component {
                                         <a class="review-link" href="#">10 Review(s) | Add your review</a>
                                     </div>
                                     <div>
-                                        <h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h3>
+                                        <h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                        </h3>
                                         <span class="product-available">In Stock</span>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</p>
 
                                     <ul class="product-btns">
                                         <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
@@ -105,22 +96,36 @@ class ProductComponent extends Component {
                                         <div id="tab1" class="tab-pane fade in active">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                        sunt in culpa qui officia deserunt mollit anim id est
+                                                        laborum.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <div id="tab2" class="tab-pane fade in">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                        sunt in culpa qui officia deserunt mollit anim id est
+                                                        laborum.</p>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div id="tab3" class="tab-pane fade in">
                                             <div class="row">
-                                                
+
                                                 <div class="col-md-3">
                                                     <div id="rating">
                                                         <div class="rating-avg">
@@ -143,7 +148,7 @@ class ProductComponent extends Component {
                                                                     <i class="fa fa-star"></i>
                                                                 </div>
                                                                 <div class="rating-progress">
-                                                                    <div style={{width: 80+'%'}}></div>
+                                                                    <div style={{width: 80 + '%'}}></div>
                                                                 </div>
                                                                 <span class="sum">3</span>
                                                             </li>
@@ -156,7 +161,7 @@ class ProductComponent extends Component {
                                                                     <i class="fa fa-star-o"></i>
                                                                 </div>
                                                                 <div class="rating-progress">
-                                                                    <div style={{width: 60+'%'}}></div>
+                                                                    <div style={{width: 60 + '%'}}></div>
                                                                 </div>
                                                                 <span class="sum">2</span>
                                                             </li>
@@ -219,7 +224,9 @@ class ProductComponent extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="review-body">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing elit, sed do eiusmod tempor
+                                                                        incididunt ut labore et dolore magna aliqua</p>
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -235,7 +242,9 @@ class ProductComponent extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="review-body">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing elit, sed do eiusmod tempor
+                                                                        incididunt ut labore et dolore magna aliqua</p>
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -251,7 +260,9 @@ class ProductComponent extends Component {
                                                                     </div>
                                                                 </div>
                                                                 <div class="review-body">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing elit, sed do eiusmod tempor
+                                                                        incididunt ut labore et dolore magna aliqua</p>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -264,24 +275,30 @@ class ProductComponent extends Component {
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="col-md-3">
                                                     <div id="review-form">
                                                         <form class="review-form">
                                                             <input class="input" type="text" placeholder="Your Name"/>
-                                                                <input class="input" type="email" placeholder="Your Email"/>
-                                                                    <textarea class="input" placeholder="Your Review"></textarea>
-                                                                    <div class="input-rating">
-                                                                        <span>Your Rating: </span>
-                                                                        <div class="stars">
-                                                                            <input id="star5" name="rating" value="5" type="radio"/><label for="star5"></label>
-                                                                                <input id="star4" name="rating" value="4" type="radio"/><label for="star4"></label>
-                                                                                    <input id="star3" name="rating" value="3" type="radio"/><label for="star3"></label>
-                                                                                        <input id="star2" name="rating" value="2" type="radio"/><label for="star2"></label>
-                                                                                            <input id="star1" name="rating" value="1" type="radio"/><label for="star1"></label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <button class="primary-btn">Submit</button>
+                                                            <input class="input" type="email" placeholder="Your Email"/>
+                                                            <textarea class="input"
+                                                                      placeholder="Your Review"></textarea>
+                                                            <div class="input-rating">
+                                                                <span>Your Rating: </span>
+                                                                <div class="stars">
+                                                                    <input id="star5" name="rating" value="5"
+                                                                           type="radio"/><label for="star5"></label>
+                                                                    <input id="star4" name="rating" value="4"
+                                                                           type="radio"/><label for="star4"></label>
+                                                                    <input id="star3" name="rating" value="3"
+                                                                           type="radio"/><label for="star3"></label>
+                                                                    <input id="star2" name="rating" value="2"
+                                                                           type="radio"/><label for="star2"></label>
+                                                                    <input id="star1" name="rating" value="1"
+                                                                           type="radio"/><label for="star1"></label>
+                                                                </div>
+                                                            </div>
+                                                            <button class="primary-btn">Submit</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -293,7 +310,7 @@ class ProductComponent extends Component {
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="section">
                     <div class="container">
                         <div class="row">
@@ -303,45 +320,51 @@ class ProductComponent extends Component {
                                 </div>
                             </div>
 
-                            
+
                             <div class="col-md-3 col-xs-6">
                                 <div class="product">
                                     <div class="product-img">
                                         <img src="./img/product01.png" alt=""/>
-									        <div class="product-label">
-                                                <span class="sale">-30%</span>
-                                            </div>
+                                        <div class="product-label">
+                                            <span class="sale">-30%</span>
+                                        </div>
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                        </h4>
                                         <div class="product-rating">
                                         </div>
                                         <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-3 col-xs-6">
                                 <div class="product">
                                     <div class="product-img">
                                         <img src="./img/product02.png" alt=""/>
-                                            <div class="product-label">
-                                                <span class="new">NEW</span>
-                                            </div>
+                                        <div class="product-label">
+                                            <span class="new">NEW</span>
+                                        </div>
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                        </h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -350,21 +373,25 @@ class ProductComponent extends Component {
                                             <i class="fa fa-star"></i>
                                         </div>
                                         <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                             <div class="clearfix visible-sm visible-xs"></div>
 
-                            
+
                             <div class="col-md-3 col-xs-6">
                                 <div class="product">
                                     <div class="product-img">
@@ -373,7 +400,8 @@ class ProductComponent extends Component {
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                        </h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -382,17 +410,21 @@ class ProductComponent extends Component {
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-3 col-xs-6">
                                 <div class="product">
                                     <div class="product-img">
@@ -401,17 +433,22 @@ class ProductComponent extends Component {
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                        </h4>
                                         <div class="product-rating">
                                         </div>
                                         <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -423,4 +460,4 @@ class ProductComponent extends Component {
     }
 }
 
-export default ProductComponent
+export default ProductPage

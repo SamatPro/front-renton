@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import LoginComponent from './LoginComponent';
-import RegisterComponent from './RegisterComponent';
-import MainPageComponent from "./MainPageComponent";
-import ProductComponent from "./ProductComponent";
-import ProfileComponent from "./ProfileComponent";
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Login from './Login';
+import Registration from './Registration';
+import MainPage from "./MainPage";
+import ProductPage from "./ProductPage";
+import Profile from "./Profile";
 import NoMatch from "./NoMatch";
+import Header from "./Header";
+import Footer from "./Footer";
 
 class InstructorApp extends Component {
 
@@ -13,19 +15,23 @@ class InstructorApp extends Component {
     render() {
         return (
             <>
-                <Router>
-                    <>
-                        <Switch>
-                            <Route path="/" exact component={MainPageComponent} />
-                            <Route path="/login" exact component={LoginComponent} />
-                            <Route path="/register" exact component={RegisterComponent} />
-                            <Route path="/index" exact component={MainPageComponent}/>
-                            <Route path="/product" exact component={ProductComponent}/>
-                            <Route path="/profile" exact component={ProfileComponent}/>
-                            <Route component={NoMatch} />
-                        </Switch>
-                    </>
-                </Router>
+                <Header/>
+                <div className={'container'}>
+                    <Router>
+                        <>
+                            <Switch>
+                                <Route path="/" exact component={MainPage} />
+                                <Route path="/login" exact component={Login} />
+                                <Route path="/register" exact component={Registration} />
+                                <Route path="/index" exact component={MainPage}/>
+                                <Route path="/product" exact component={ProductPage}/>
+                                <Route path="/profile" exact component={Profile}/>
+                                <Route component={NoMatch} />
+                            </Switch>
+                        </>
+                    </Router>
+                </div>
+                <Footer/>
             </>
         )
     }

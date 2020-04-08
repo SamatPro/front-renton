@@ -1,31 +1,28 @@
 import React, {Component} from 'react'
+import Navbar from "./Navbar";
+import ProductBar from "./ProductBar";
 
-class MainPageComponent extends Component {
+class MainPage extends Component {
 
     render() {
         return (
             <div>
-                <nav id="navigation">
-                    <div class="container">
-                        <div id="responsive-nav">
-                            <ul class="main-nav nav navbar-nav">
-                                <li class="active"><a href="#">Главная</a></li>
-                                <li><a href="#">Топ</a></li>
-                                <li><a href="#">Категории</a></li>
-                                <li><a href="#">РОПрывало</a></li>
-                                <li><a href="#">оываол</a></li>
-                                <li><a href="#">лываоы</a></li>
-                                <li><a href="#">Aывоап</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
+                <Navbar/>
                 <div class="section">
                     <div class="container">
                         <div id="store" class="col-md-12">
                             <div class="row">
-                                <div class="col-md-4 col-xs-6">
+                                <ProductBar/>
+                                <ProductBar/>
+                                <ProductBar/>
+                                <ProductBar/>
+                                <ProductBar/>
+                                <ProductBar/>
+                                <ProductBar/>
+
+                                <div className="clearfix visible-sm visible-xs"></div>
+
+                                {/*<div class="col-md-4 col-xs-6">
                                     <div class="product">
                                         <div class="product-img">
                                             <img src="./img/product.jpg" alt=""/>
@@ -313,10 +310,10 @@ class MainPageComponent extends Component {
                                             </button>
                                         </div>
                                     </div>
-                                </div>
+                                </div>*/}
                             </div>
                             <div class="store-filter clearfix">
-                                <span class="store-qty">Showing 20-100 products</span>
+                                <span class="store-qty">Показано 1-20 товары</span>
                                 <ul class="store-pagination">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>
@@ -333,4 +330,4 @@ class MainPageComponent extends Component {
     }
     }
 
-    export default MainPageComponent
+    export default MainPage

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class ProfileComponent extends Component {
+class Profile extends Component {
 
     render() {
         return (
@@ -11,4 +11,4 @@ class ProfileComponent extends Component {
     }
 }
 
-export default ProfileComponent
+export default Profile

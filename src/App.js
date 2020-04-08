@@ -5,7 +5,7 @@ import InstructorApp from './component/InstructorApp.jsx';
 class App extends Component {
     render() {
         return (
-            <div className="container">
+            <div>
                 <InstructorApp />
             </div>
         );

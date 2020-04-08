@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import AuthenticationService from '../service/AuthenticationService';
+import Navbar from "./Navbar";
 
-class LoginComponent extends Component {
+class Login extends Component {
 
     constructor(props) {
         super(props)
@@ -42,21 +43,7 @@ class LoginComponent extends Component {
     render() {
         return (
             <div>
-                <nav id="navigation">
-                    <div className="container">
-                        <div id="responsive-nav">
-                            <ul className="main-nav nav navbar-nav">
-                                <li className="active"><a href="#">Home</a></li>
-                                <li><a href="#">Популярные</a></li>
-                                <li><a href="#">Категории</a></li>
-                                <li><a href="#">бтыавбыт</a></li>
-                                <li><a href="#">ыаываыа</a></li>
-                                <li><a href="#">отыоплs</a></li>
-                                <li><a href="#">Aлвылатоы</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <Navbar/>
 
                 <div className="section">
                     <div className="container">
@@ -88,4 +75,4 @@ class LoginComponent extends Component {
     }
 }
 
-export default LoginComponent
+export default Login

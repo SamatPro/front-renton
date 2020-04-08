@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import AuthenticationService from '../service/AuthenticationService';
 
-class RegisterComponent extends Component {
+class Registration extends Component {
 
     constructor(props) {
         super(props)
@@ -23,8 +23,7 @@ class RegisterComponent extends Component {
     handleChange(event) {
         this.setState(
             {
-                [event.target.name]
-                    : event.target.value
+                [event.target.name]: event.target.value
             }
         )
     }
@@ -42,7 +41,8 @@ class RegisterComponent extends Component {
                 console.log(response.data);
                 AuthenticationService.registerSuccessfulLoginForJwt(this.state.login, response.data.value)
                 this.props.history.push(`/login`)
-            }).catch(() => {}
+            }).catch(() => {
+            }
         )
 
     }
@@ -50,22 +50,6 @@ class RegisterComponent extends Component {
     render() {
         return (
             <div>
-                <nav id="navigation">
-                    <div class="container">
-                        <div id="responsive-nav">
-                            <ul class="main-nav nav navbar-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Популярные</a></li>
-                                <li><a href="#">Категории</a></li>
-                                <li><a href="#">бтыавбыт</a></li>
-                                <li><a href="#">ыаываыа</a></li>
-                                <li><a href="#">отыоплs</a></li>
-                                <li><a href="#">Aлвылатоы</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
                 <div class="section">
                     <div class="container">
                         <div class="row">
@@ -76,28 +60,38 @@ class RegisterComponent extends Component {
                                         <h3 class="title">Регистрация</h3>
                                     </div>
                                     <div class="form-group">
-                                        <input class="input" type="email" name="login" placeholder="Login" value={this.state.login} onChange={this.handleChange}/>
+                                        <input class="input" type="email" name="login" placeholder="Login"
+                                               value={this.state.login} onChange={this.handleChange}/>
                                     </div>
                                     <div className="form-group">
-                                        <input className="input" type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
+                                        <input className="input" type="password" name="password" placeholder="Password"
+                                               value={this.state.password} onChange={this.handleChange}/>
                                     </div>
                                     <div className="form-group">
-                                        <input className="input" type="password" name="repassword" placeholder="Repassword" value={this.state.repassword} onChange={this.handleChange}/>
+                                        <input className="input" type="password" name="repassword"
+                                               placeholder="Repassword" value={this.state.repassword}
+                                               onChange={this.handleChange}/>
                                     </div>
                                     <div class="form-group">
-                                        <input class="input" type="text" name="first-name" placeholder="First Name" value={this.state.firstName} onChange={this.handleChange}/>
+                                        <input class="input" type="text" name="first-name" placeholder="First Name"
+                                               value={this.state.firstName} onChange={this.handleChange}/>
                                     </div>
                                     <div class="form-group">
-                                        <input class="input" type="text" name="last-name" placeholder="Last Name" value={this.state.lastName} onChange={this.handleChange}/>
+                                        <input class="input" type="text" name="last-name" placeholder="Last Name"
+                                               value={this.state.lastName} onChange={this.handleChange}/>
                                     </div>
                                     <div class="form-group">
-                                        <input class="input" type="text" name="address" placeholder="Address" value={this.state.address} onChange={this.handleChange}/>
+                                        <input class="input" type="text" name="address" placeholder="Address"
+                                               value={this.state.address} onChange={this.handleChange}/>
                                     </div>
                                     <div class="form-group">
-                                        <input class="input" type="tel" name="tel" placeholder="Phone" value={this.state.phone} onChange={this.handleChange}/>
+                                        <input class="input" type="tel" name="tel" placeholder="Phone"
+                                               value={this.state.phone} onChange={this.handleChange}/>
                                     </div>
                                 </div>
-                                <button href="#" className="primary-btn order-submit" onClick={this.registerClicked}>Зарегистрироваться</button>
+                                <button href="#" className="primary-btn order-submit"
+                                        onClick={this.registerClicked}>Зарегистрироваться
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -109,4 +103,4 @@ class RegisterComponent extends Component {
     }
 }
 
-export default RegisterComponent
+export default Registration
