@@ -27,7 +27,7 @@ class ProductBar extends Component {
                         </div>
                         <div class="product-body">
                             <p class="product-category">{this.state.category}</p>
-                            <h3 class="product-name"><a href="#">{this.state.title}</a></h3>
+                            <h3 class="product-name"><a href="/product">{this.state.title}</a></h3>
                             <h4 class="product-price">{this.state.price}
                                 <del
                                     class="product-old-price">$990.00

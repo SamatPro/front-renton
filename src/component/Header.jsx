@@ -10,9 +10,9 @@ class Header extends Component {
                     <div id="top-header">
                         <div class="container">
                             <ul class="header-links pull-left">
-                                <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker"></i> Казань, Кремлевская 35 </a></li>
+                                <li><a><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+                                <li><a><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+                                <li><a><i class="fa fa-map-marker"></i> Казань, Кремлевская 35 </a></li>
                             </ul>
 
                             {/*<div id="auth"></div>*/}
@@ -62,7 +62,7 @@ class Header extends Component {
                                     <div class="header-ctn">
                                         
                                         <div>
-                                            <a href="#">
+                                            <a >
                                                 <i class="fa fa-heart-o"></i>
                                                 <span>Мои пожелания</span>
                                                 <div class="qty">2</div>
@@ -84,7 +84,7 @@ class Header extends Component {
                                                             <img src="./img/product.jpg" alt=""/>
                                                         </div>
                                                         <div class="product-body">
-                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                            <h3 class="product-name"><a >product name goes here</a></h3>
                                                             <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
                                                         </div>
                                                         <button class="delete"><i class="fa fa-close"></i></button>
@@ -95,7 +95,7 @@ class Header extends Component {
                                                             <img src="./img/product.jpg" alt=""/>
                                                         </div>
                                                         <div class="product-body">
-                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                            <h3 class="product-name"><a >product name goes here</a></h3>
                                                             <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
                                                         </div>
                                                         <button class="delete"><i class="fa fa-close"></i></button>
@@ -106,8 +106,8 @@ class Header extends Component {
                                                     <h5>SUBTOTAL: $2940.00</h5>
                                                 </div>
                                                 <div class="cart-btns">
-                                                    <a href="#">View Cart</a>
-                                                    <a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+                                                    <a >View Cart</a>
+                                                    <a >Checkout  <i class="fa fa-arrow-circle-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,7 +115,7 @@ class Header extends Component {
 
                                         
                                         <div class="menu-toggle">
-                                            <a href="#">
+                                            <a >
                                                 <i class="fa fa-bars"></i>
                                                 <span>Меню</span>
                                             </a>

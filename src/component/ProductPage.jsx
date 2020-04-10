@@ -60,7 +60,7 @@ class ProductPage extends Component {
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star-o"></i>
                                         </div>
-                                        <a class="review-link" href="#">10 Review(s) | Add your review</a>
+                                        <a class="review-link">10 Review(s) | Add your review</a>
                                     </div>
                                     <div>
                                         <h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
@@ -73,13 +73,13 @@ class ProductPage extends Component {
                                         consequat.</p>
 
                                     <ul class="product-btns">
-                                        <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-                                        <li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+                                        <li><a><i class="fa fa-heart-o"></i> add to wishlist</a></li>
+                                        <li><a><i class="fa fa-exchange"></i> add to compare</a></li>
                                     </ul>
                                     <ul class="product-links">
                                         <li>Category:</li>
-                                        <li><a href="#">Headphones</a></li>
-                                        <li><a href="#">Accessories</a></li>
+                                        <li><a>Headphones</a></li>
+                                        <li><a>Accessories</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -268,10 +268,10 @@ class ProductPage extends Component {
                                                         </ul>
                                                         <ul class="reviews-pagination">
                                                             <li class="active">1</li>
-                                                            <li><a href="#">2</a></li>
-                                                            <li><a href="#">3</a></li>
-                                                            <li><a href="#">4</a></li>
-                                                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                                            <li><a>2</a></li>
+                                                            <li><a>3</a></li>
+                                                            <li><a>4</a></li>
+                                                            <li><a><i class="fa fa-angle-right"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -331,7 +331,7 @@ class ProductPage extends Component {
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
-                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 class="product-name"><a>product name goes here</a></h3>
                                         <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
                                         </h4>
                                         <div class="product-rating">
@@ -362,7 +362,7 @@ class ProductPage extends Component {
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
-                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 class="product-name"><a>product name goes here</a></h3>
                                         <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
                                         </h4>
                                         <div class="product-rating">
@@ -399,7 +399,7 @@ class ProductPage extends Component {
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
-                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 class="product-name"><a>product name goes here</a></h3>
                                         <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
                                         </h4>
                                         <div class="product-rating">
@@ -432,7 +432,7 @@ class ProductPage extends Component {
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
-                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 class="product-name"><a>product name goes here</a></h3>
                                         <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
                                         </h4>
                                         <div class="product-rating">
